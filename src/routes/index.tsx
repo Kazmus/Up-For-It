@@ -225,7 +225,7 @@ function Hero({ onAdvise }: { onAdvise: () => void }) {
         aria-hidden="true"
         className="pointer-events-none absolute -top-24 right-0 h-72 w-72 rounded-full bg-secondary/60 blur-3xl"
       />
-      <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 pb-14 pt-10 sm:px-6 sm:pt-14 lg:grid-cols-[1.15fr_0.85fr] lg:gap-14 lg:pb-24 lg:pt-20 lg:px-8">
+      <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 pb-16 pt-10 sm:px-6 sm:pt-14 lg:grid-cols-[1.15fr_0.85fr] lg:gap-14 lg:pb-24 lg:pt-20 lg:px-8">
         <div>
           <p className="mb-4 inline-flex items-center gap-2 rounded-full bg-secondary px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wide text-secondary-foreground sm:text-sm">
             Conseil & formation — Horeca, commerces, freelances
@@ -482,7 +482,7 @@ function LandingPage() {
         <Hero onAdvise={() => goContact()} />
 
         {/* Deux portes */}
-        <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20" aria-labelledby="portes-titre">
+        <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24" aria-labelledby="portes-titre">
           <div className="mx-auto max-w-2xl text-center">
             <h2 id="portes-titre" className="text-2xl font-extrabold tracking-tight sm:text-3xl lg:text-4xl">
               Deux portes d'entrée, une seule ambition
@@ -537,7 +537,7 @@ function LandingPage() {
         </section>
 
         {/* Orientation */}
-        <section className="mx-auto max-w-6xl px-4 pb-14 sm:px-6 lg:px-8 lg:pb-20">
+        <section className="mx-auto max-w-6xl px-4 pb-16 sm:px-6 lg:px-8 lg:pb-24">
           <div className="flex flex-col items-start gap-5 rounded-3xl bg-secondary p-8 text-secondary-foreground sm:flex-row sm:items-center sm:justify-between sm:p-10">
             <div>
               <h2 className="text-xl font-extrabold tracking-tight sm:text-2xl">
@@ -558,7 +558,7 @@ function LandingPage() {
         </section>
 
         {/* À propos */}
-        <section id="a-propos" className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20" aria-labelledby="a-propos-titre">
+        <section id="a-propos" className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24" aria-labelledby="a-propos-titre">
           <div className="grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-14">
             <PhotoPlaceholder
               label="Photo d'ambiance — terrain, avec vous (à remplacer)"
@@ -585,7 +585,7 @@ function LandingPage() {
         </section>
 
         {/* Témoignages */}
-        <section id="references" className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20" aria-labelledby="references-titre">
+        <section id="references" className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24" aria-labelledby="references-titre">
           <div className="mx-auto max-w-2xl text-center">
             <h2 id="references-titre" className="text-2xl font-extrabold tracking-tight sm:text-3xl lg:text-4xl">
               Ils sont passés avant vous
@@ -629,7 +629,7 @@ function LandingPage() {
         </section>
 
         {/* Primes et aides */}
-        <section className="mx-auto max-w-6xl px-4 pb-14 sm:px-6 lg:px-8 lg:pb-20" aria-labelledby="primes-titre">
+        <section className="mx-auto max-w-6xl px-4 pb-16 sm:px-6 lg:px-8 lg:pb-24" aria-labelledby="primes-titre">
           <div className="rounded-3xl border border-border bg-card p-8 shadow-soft sm:p-10">
             <div className="flex items-start gap-4">
               <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-secondary">
@@ -658,7 +658,7 @@ function LandingPage() {
         </section>
 
         {/* CTA final */}
-        <section id="contact" className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20" aria-labelledby="contact-titre">
+        <section id="contact" className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24" aria-labelledby="contact-titre">
           <div className="mx-auto max-w-2xl text-center">
             <h2 id="contact-titre" className="text-2xl font-extrabold tracking-tight sm:text-3xl lg:text-4xl">
               Construisons votre succès
