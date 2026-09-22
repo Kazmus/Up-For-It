@@ -221,36 +221,44 @@ function Header({ onAdvise }: { onAdvise: () => void }) {
 function Hero({ onAdvise }: { onAdvise: () => void }) {
   return (
     <section className="relative overflow-hidden">
+      {/* Zone photo en arrière-plan pleine section (image à remplacer) */}
+      <div
+        role="img"
+        aria-label="Photo d'ambiance : l'intérieur chaleureux d'un établissement horeca en Belgique (photo à venir)"
+        className="absolute inset-0 bg-gradient-to-br from-secondary/50 via-background to-accent/30"
+      >
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -top-24 right-0 h-72 w-72 rounded-full bg-secondary/60 blur-3xl"
+        />
+        <span className="absolute bottom-3 right-4 max-w-56 text-right text-xs font-medium text-muted-foreground/80 sm:bottom-4 sm:right-6">
+          Photo d'ambiance — votre établissement (à remplacer)
+        </span>
+      </div>
+      {/* Voile de lisibilité par-dessus la photo */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -top-24 right-0 h-72 w-72 rounded-full bg-secondary/60 blur-3xl"
+        className="absolute inset-0 bg-background/55 sm:bg-background/45"
       />
-      <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 pb-16 pt-10 sm:px-6 sm:pt-14 lg:grid-cols-[1.15fr_0.85fr] lg:gap-14 lg:pb-24 lg:pt-20 lg:px-8">
-        <div>
-          <p className="mb-4 inline-flex items-center gap-2 rounded-full bg-secondary px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wide text-secondary-foreground sm:text-sm">
-            Conseil & formation — Horeca, commerces, freelances
+      <div className="relative mx-auto flex max-w-3xl flex-col items-center px-4 pb-16 pt-12 text-center sm:px-6 sm:pb-24 sm:pt-16 lg:pb-28 lg:pt-20">
+        <p className="mb-4 inline-flex items-center gap-2 rounded-full bg-secondary px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wide text-secondary-foreground sm:text-sm">
+          Conseil & formation — Horeca, commerces, freelances
+        </p>
+        <h1 className="text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
+          Des projets horeca qui tiennent la route.
+        </h1>
+        <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground sm:mt-6 sm:text-lg">
+          Horeca, commerces, freelances : on travaille avec votre réalité,
+          pas avec des grandes théories.
+        </p>
+        <div className="mt-6 sm:mt-8">
+          <CtaButton onClick={onAdvise} className="flex w-full items-center justify-center gap-2 rounded-full bg-primary px-8 py-3.5 text-base font-semibold text-primary-foreground shadow-soft transition-all hover:-translate-y-0.5 hover:shadow-lift sm:inline-flex sm:w-auto">
+            Me faire conseiller <ArrowIcon />
+          </CtaButton>
+          <p className="mt-3 text-sm text-muted-foreground">
+            Un premier échange, sans engagement et sans jargon.
           </p>
-          <h1 className="text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-            Des projets horeca qui tiennent la route.
-          </h1>
-          <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground sm:mt-6 sm:text-lg">
-            Horeca, commerces, freelances : on travaille avec votre réalité,
-            pas avec des grandes théories.
-          </p>
-          <div className="mt-6 sm:mt-8">
-            <CtaButton onClick={onAdvise} className="flex w-full items-center justify-center gap-2 rounded-full bg-primary px-8 py-3.5 text-base font-semibold text-primary-foreground shadow-soft transition-all hover:-translate-y-0.5 hover:shadow-lift sm:inline-flex sm:w-auto">
-              Me faire conseiller <ArrowIcon />
-            </CtaButton>
-            <p className="mt-3 text-sm text-muted-foreground">
-              Un premier échange, sans engagement et sans jargon.
-            </p>
-          </div>
         </div>
-        <PhotoPlaceholder
-          className="hidden min-h-80 items-center justify-center rounded-3xl border-2 border-dashed border-border bg-muted/60 p-6 lg:flex"
-          label="Photo d'ambiance — votre établissement (à remplacer)"
-          alt="Photo d'ambiance : l'intérieur chaleureux d'un établissement horeca en Belgique (photo à venir)"
-        />
       </div>
     </section>
   );
