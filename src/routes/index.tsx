@@ -564,7 +564,7 @@ function LandingPage() {
               label="Photo d'ambiance — terrain, avec vous (à remplacer)"
               alt="Photo d'ambiance : un conseiller Up For It sur le terrain avec un gérant (photo à venir)"
             />
-            <div>
+            <div className="text-center lg:text-left">
               <h2 id="a-propos-titre" className="text-2xl font-extrabold tracking-tight sm:text-3xl lg:text-4xl">
                 À propos d'Up For It
               </h2>
@@ -678,7 +678,7 @@ function LandingPage() {
       <footer className="bg-foreground text-background">
         <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
           <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
-            <div>
+            <div className="text-center md:text-left">
               <p className="text-lg font-black tracking-tight">
                 UP <span className="text-primary">FOR IT</span>
               </p>
@@ -693,7 +693,7 @@ function LandingPage() {
                 <PhoneIcon /> +32 (0)479 09 19 09
               </a>
             </div>
-            <nav aria-label="Réseaux sociaux et liens" className="flex flex-col gap-2.5 text-sm">
+            <nav aria-label="Réseaux sociaux et liens" className="flex flex-col items-center gap-2.5 text-sm md:items-start">
               <span className="text-xs font-bold uppercase tracking-wide text-background/60">
                 Suivez-nous
               </span>
@@ -711,7 +711,7 @@ function LandingPage() {
               </a>
             </nav>
           </div>
-          <div className="mt-10 flex flex-col gap-2 border-t border-background/15 pt-6 text-xs text-background/60 sm:flex-row sm:items-center sm:justify-between">
+          <div className="mt-10 flex flex-col items-center gap-2 border-t border-background/15 pt-6 text-center text-xs text-background/60 sm:flex-row sm:justify-between sm:text-left">
             <p>© {new Date().getFullYear()} Up For It SRL — Belgique</p>
             <div className="flex gap-4">
               <a href="#" className="hover:text-background">
