@@ -245,7 +245,7 @@ function Hero({ onAdvise }: { onAdvise: () => void }) {
           Conseil & formation — Horeca, commerces, freelances
         </p>
         <h1 className="text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-          Des projets horeca qui tiennent la route.
+          Des projets qui tiennent la route.
         </h1>
         <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground sm:mt-6 sm:text-lg">
           Horeca, commerces, freelances : on travaille avec votre réalité,
